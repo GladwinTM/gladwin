@@ -3,25 +3,34 @@ export type Project = {
   category: string;
   description: string;
   accent: string;
+  liveUrl: string;
 };
 
 export const projects: Project[] = [
   {
-    title: "Orbit",
-    category: "Product platform",
-    description: "A calm, focused workspace for teams shaping ambitious products.",
+    title: "RIYA OILS",
+    category: "E-commerce platform",
+    description:
+      "A production-ready e-commerce platform built for real-world products, orders, and customer workflows.",
     accent: "from-[#2d2d2d] to-[#818181]",
+    liveUrl: "https://riyaoils.netlify.app/",
   },
+
   {
-    title: "Common Ground",
-    category: "Brand experience",
-    description: "A flexible digital identity designed for a community with momentum.",
+    title: "COURSEREV",
+    category: "Professional work · AI / Voice",
+    description:
+      "AI-powered booking platform featuring voice-agent workflows, booking automation, and complex business logic.",
     accent: "from-[#938a7c] to-[#d6d1c9]",
+    liveUrl: "https://courserev.ai/voice-concierge",
   },
+
   {
-    title: "Relay",
-    category: "AI tooling",
-    description: "An intelligent dashboard that brings complex operations into view.",
+    title: "OTHER GITHUB PROJECTS",
+    category: "GITHUB",
+    description:
+      "A collection of other projects and repositories that showcase my work and contributions on GitHub.",
     accent: "from-[#48555c] to-[#9dabb1]",
+    liveUrl: "https://github.com/GladwinTM",
   },
 ];
