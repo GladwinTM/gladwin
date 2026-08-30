@@ -19,8 +19,22 @@ a { color: inherit; text-decoration: none; }
 .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(to right, rgb(0 0 0 / .045) 1px, transparent 1px), linear-gradient(to bottom, rgb(0 0 0 / .045) 1px, transparent 1px); background-size: 4rem 4rem; mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent); }
 .thread-effect { display: flex; height: 8.5rem; justify-content: space-around; overflow: hidden; pointer-events: none; }
 .thread-effect span { display: block; width: 2px; height: 100%; background: var(--yellow); border-radius: 100%; transform: scaleY(.8); animation: thread 1.8s ease-in-out infinite alternate; }
-.gauch-mark { display: grid; width: 2.25rem; height: 2.25rem; place-items: center; border-radius: 999px; background: var(--yellow); color: var(--ink); font-size: 1.45rem; font-weight: 900; line-height: 1; letter-spacing: -.13em; transition: transform .2s ease, background .2s ease; }
-.gauch-mark:hover { transform: rotate(-12deg) scale(1.08); background: white; }
+.gauch-mark {
+  position: relative;
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  overflow: hidden;
+  border-radius: 999px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.gauch-mark-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gauch-mark:hover { transform: rotate(-12deg) scale(1.08); background: black; }
 .pointer-trail { position: fixed; z-index: 999; inset: 0; pointer-events: none; }
 .pointer-trail span { position: absolute; left: var(--x, -10rem); top: var(--y, -10rem); width: .78rem; height: .78rem; background: var(--yellow); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 94%, 50% 72%, 21% 94%, 32% 57%, 2% 35%, 39% 35%); filter: drop-shadow(0 0 4px var(--yellow)) drop-shadow(0 0 12px var(--yellow)); opacity: 0; transform: translate(-50%, -50%) rotate(18deg); transition: left .16s linear, top .16s linear, opacity .3s ease; }
 .pointer-trail span:nth-child(1) { width: 1.3rem; height: 1.3rem; transition-duration: .3s, .3s, .2s; filter: drop-shadow(0 0 6px var(--yellow)) drop-shadow(0 0 18px var(--yellow)); }

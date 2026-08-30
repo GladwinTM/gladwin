@@ -18,8 +18,12 @@ export function About() {
         </div>
         <div className="relative min-h-96 overflow-hidden bg-neutral-200 sm:min-h-[36rem]">
           <div className="absolute inset-6 border border-black/15" />
-          <div className="absolute bottom-7 left-7 max-w-[14rem] text-sm leading-5 text-neutral-700">Technology should feel clear, useful, and quietly powerful.</div>
-          <div className="absolute right-7 top-7 text-6xl tracking-[-0.1em] text-black/80">G.</div>
+          <img
+            src="https://ovpyekpwmbvuxzspjauz.supabase.co/storage/v1/object/sign/my_images/Subject.png?token=eyJraWQiOiI5ZTlmNDJlMC05ZjAxLTRiMjgtOGEyNC02OTcxNGUwODcyZjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJteV9pbWFnZXMvU3ViamVjdC5wbmciLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg4MDc2MTY1LCJleHAiOjE4MTk2MTIxNjV9.bKes4amVuul_iv06ymwnBCsEwimbh3BMTppAGUVFycY"
+            alt="Subject"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute right-7 top-7 text-3xl tracking-[-0.1em] text-black/80"> Creating is a part of being human</div>
         </div>
       </div>
     </section>
