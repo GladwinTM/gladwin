@@ -7,6 +7,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+
+  {
+    title: "PLOT PLANNER",
+    category: "AI-Powered Personal Growth, Career Exploration and Opportunity Platform",
+    description:
+      "PlotPlanner is an AI-powered platform that helps you explore your interests, discover career paths, and turn your skills into opportunities",
+    accent: "from-[#E0D268] to-[#E2A9AF]",
+    liveUrl: "https://planyourplot.netlify.app/",
+  },
+
   {
     title: "RIYA OILS",
     category: "E-commerce platform",
